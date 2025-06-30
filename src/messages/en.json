@@ -1,0 +1,65 @@
+{
+  "Navigation": {
+    "About": "About us",
+    "Portfolio": "Portfolio",
+    "Prices": "Prices",
+    "FAQ": "FAQ",
+    "Contact": "Contact"
+  },
+  "Hero": {
+    "title": "",
+    "subtitle": ""
+  },
+  "About": {
+    "title": "About Us",
+    "description": "",
+    "contactLink": "Contact Us"
+  },
+  "Collection": {
+    "collectionsTitle": "Collections"
+  },
+  "Services": {
+    "servicesTitle": "Our Services",
+    "customTailoring": "",
+    "qualityControl": "",
+    "steaming": "",
+    "stylistConsultation": "",
+    "weddingStorage": "",
+    "dressAlterations": "",
+    "everydayClothing": "",
+    "eveningDressRental": ""
+  },
+  "Contacts": {
+    "contactTitle": "Contacts",
+    "address": "",
+    "phone1": "",
+    "phone2": ""
+  },
+  "ContactForm": {
+    "heading": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "submit": "Submit",
+    "nameRequired": "Name is required",
+    "nameMinLength": "Name must be at least 3 characters long",
+    "nameMaxLength": "Name cannot exceed 50 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "phoneRequired": "Phone number is required",
+    "phoneInvalid": "Invalid phone number format"
+  },
+  "CustomNotification": {
+    "successMessage": "The request has been successfully sent! We will contact you soon 😊"
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions",
+    "item1": {
+      "question": "Do you offer custom tailoring for dresses?",
+      "answer": "Yes, we create dresses tailored to your design and preferences."
+    }
+  },
+  "Feedback": {
+    "title": "Reviews"
+  }
+}
