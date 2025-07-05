@@ -13,30 +13,23 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
   const handleLinkClick = () => {
     closeMenu?.();
   };
+  const navItems = [
+    { label: t("About"), href: "#About" },
+    { label: t("Portfolio"), href: "#Portfolio" },
+    { label: t("Prices"), href: "#Prices" },
+    { label: t("FAQ"), href: "#FAQ" },
+  ];
 
   return (
     <nav>
       <ul>
-        <li>
-          <Link href="#About" onClick={handleLinkClick}>
-            {t("About")}
-          </Link>
-        </li>
-        <li>
-          <Link href="#Portfolio" onClick={handleLinkClick}>
-            {t("Portfolio")}
-          </Link>
-        </li>
-        <li>
-          <Link href="#Prices" onClick={handleLinkClick}>
-            {t("Prices")}
-          </Link>
-        </li>
-        <li>
-          <Link href="#FAQ" onClick={handleLinkClick}>
-            {t("FAQ")}
-          </Link>
-        </li>
+        {navItems.map(({ label, href }) => (
+          <li key={href}>
+            <Link href={href} onClick={handleLinkClick}>
+              {label}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );
