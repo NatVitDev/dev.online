@@ -2,6 +2,9 @@
 
 import { usePathname, useRouter, Locale } from "@/i18n/routing";
 import { useParams } from "next/navigation";
+import Button from "../Button/Button";
+
+import s from "./localeSwitcher.module.scss";
 
 const LocaleSwitcher = () => {
   const router = useRouter();
@@ -17,9 +20,14 @@ const LocaleSwitcher = () => {
   };
 
   return (
-    <div>
-      <button onClick={() => onLocaleChange("en")}>English</button>
-      <button onClick={() => onLocaleChange("uk")}>Українська</button>
+    <div className={s.box__localeButton}>
+      <Button className={s.localeButton} onClick={() => onLocaleChange("en")}>
+        En
+      </Button>
+
+      <Button className={s.localeButton} onClick={() => onLocaleChange("uk")}>
+        Укр
+      </Button>
     </div>
   );
 };

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import s from "./nav.module.scss";
 
 type NavProps = {
   closeMenu?: () => void;
@@ -21,10 +22,10 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
   ];
 
   return (
-    <nav>
-      <ul>
+    <nav className={s.nav}>
+      <ul className={s.list}>
         {navItems.map(({ label, href }) => (
-          <li key={href}>
+          <li className={s.list__item} key={href}>
             <Link href={href} onClick={handleLinkClick}>
               {label}
             </Link>

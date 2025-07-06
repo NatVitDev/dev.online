@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import "@/styles/globals.scss";
-// import "@/styles/globals.scss";
 
 import { NextIntlClientProvider } from "next-intl";
 import { Locale, routing } from "@/i18n/routing";
@@ -9,11 +8,8 @@ import { Locale, routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
 import Header from "@/components/Header/Header";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { golos } from "@/utils/fonts";
+import Footer from "@/components/Footer/Footer";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -40,11 +36,12 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning={true}>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${golos.className} ${geistMono.variable}`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
 
           <main>{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

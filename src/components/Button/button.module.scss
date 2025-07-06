@@ -1,0 +1,27 @@
+@import "@/styles/mixins";
+
+.button {
+  @include flexCenter();
+  @include fontSize(16px, 500, 27.2px);
+
+  text-align: center;
+
+  background-color: $primary-button-background-color;
+  color: #ffffff;
+
+  width: 213px;
+  height: 51px;
+  border-radius: 4px;
+  padding: 12px 56px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+
+  @include hover(background-color, $primary-button-background-hover);
+
+  //   @include mediaMaxQuery(768px) {
+  //     width: 100%;
+  //     padding: 10px 40px;
+  //   }
+}

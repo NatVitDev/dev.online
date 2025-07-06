@@ -1,4 +1,21 @@
-$primary-color: #1e88e5;
+// color
+$primary-button-background-color: #145a32;
+
+$primary-button-background-hover: #1a631a;
+
 $secondary-color: #ff9800;
-$background-color: #f5f5f5;
-$text-color: #000;
+
+$background-color: #fffefa;
+$text-color: #2d3037;
+
+// time
+$transition-time: 0.3s;
+
+// screen
+$screen-size-l: 1280px;
+$screen-size-m: 768px;
+$screen-size-s: 320px;
+
+$screen-max-size-s: 767px;
+$screen-max-size-m: 1279px;
+$screen-max-size-l: 1535px;

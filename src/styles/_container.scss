@@ -1,0 +1,19 @@
+@import "./mixins";
+@import "./variables";
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  @include mediaQuery($screen-size-s) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  @include mediaQuery($screen-size-m) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include mediaQuery($screen-size-l) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
