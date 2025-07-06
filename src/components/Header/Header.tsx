@@ -42,7 +42,7 @@ const Header = () => {
               id="icon-language"
               width={48}
               height={48}
-              className={s.logo}
+              className={s.language}
               onClick={toggleLocale}
             />
             {showLocale && <LocaleSwitcher />}
