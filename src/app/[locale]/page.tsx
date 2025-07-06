@@ -1,4 +1,4 @@
-import About from "@/About/About";
+import About from "@/components/About/About";
 import Contacts from "@/components/Contacts/Contacts";
 import FAQ from "@/components/FAQ/FAQ";
 import Hero from "@/components/Hero/Hero";
