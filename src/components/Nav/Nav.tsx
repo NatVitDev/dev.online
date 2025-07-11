@@ -6,9 +6,10 @@ import s from "./nav.module.scss";
 
 type NavProps = {
   closeMenu?: () => void;
+  className?: string;
 };
 
-const Nav: React.FC<NavProps> = ({ closeMenu }) => {
+const Nav: React.FC<NavProps> = ({ closeMenu, className = "" }) => {
   const t = useTranslations("Navigation");
 
   const handleLinkClick = () => {
@@ -22,17 +23,15 @@ const Nav: React.FC<NavProps> = ({ closeMenu }) => {
   ];
 
   return (
-    <nav className={s.nav}>
-      <ul className={s.list}>
-        {navItems.map(({ label, href }) => (
-          <li className={s.list__item} key={href}>
-            <Link href={href} onClick={handleLinkClick}>
-              {label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <ul className={`${s.list} ${className}`}>
+      {navItems.map(({ label, href }) => (
+        <li className={s.list__item} key={href}>
+          <Link href={href} onClick={handleLinkClick}>
+            {label}
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 };
 

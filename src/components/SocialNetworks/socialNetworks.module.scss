@@ -1,0 +1,56 @@
+@import "@/styles/container";
+@import "@/styles/_mixins.scss";
+
+.network__list__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.network__list__link:hover .network__list__icon {
+  animation: shake 250ms;
+}
+
+.instagram {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline: none;
+}
+
+.facebook {
+  background-color: #4267b2;
+  outline-color: #4267b2;
+}
+
+.tiktok {
+  background-color: $text-color;
+  outline-color: $text-color;
+  color: #fff;
+  &:hover .icon__tiktok {
+    filter: drop-shadow(1px 1px 1px red);
+  }
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}

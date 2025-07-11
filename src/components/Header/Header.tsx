@@ -33,7 +33,9 @@ const Header = () => {
         <Logo />
 
         <div className={s.nav__box}>
-          <Nav />
+          <nav className={s.nav}>
+            <Nav className={s.list} />
+          </nav>
 
           <Button>ЗВ’ЯЗАТИСЬ</Button>
 

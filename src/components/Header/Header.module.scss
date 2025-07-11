@@ -8,6 +8,16 @@
   @include flex;
 }
 
+.nav {
+  margin-right: 35px;
+}
+
+.list {
+  @include flex;
+  display: flex;
+  gap: 35px;
+}
+
 .locale__wrapper {
   position: relative;
   margin-left: 35px;

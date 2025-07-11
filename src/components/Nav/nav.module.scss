@@ -1,14 +1,6 @@
 @import "@/styles/container";
 @import "@/styles/_mixins.scss";
 
-.nav {
-  margin-right: 35px;
-}
-.list {
-  @include flex;
-  gap: 35px;
-}
-
 .list__item {
   padding: 2px;
   @include fontSize(16px, 500, 27px);
