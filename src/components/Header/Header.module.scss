@@ -1,4 +1,5 @@
-@import "@/styles/container";
+@use "@/styles/mixins" as *;
+@use "@/styles/container" as *;
 
 .container__header {
   @include flexSpaceBetween;

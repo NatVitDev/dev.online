@@ -1,13 +1,13 @@
-@import "@/styles/container";
-@import "@/styles/_mixins.scss";
+@use "@/styles/mixins" as *;
+@use "@/styles/container" as *;
 
-@import "@/components/SocialNetworks/socialNetworks.module.scss";
+@use "@/components/SocialNetworks/socialNetworks.module.scss";
 
 .container__socialNetworks {
   display: flex;
   gap: 4px;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .network__list {

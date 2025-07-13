@@ -1,6 +1,6 @@
-@import "@/styles/container";
-@import "@/styles/_mixins.scss";
-@import "@/styles/variables";
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+@use "@/styles/container" as *;
 
 .priceBlockTitle {
   font-family: var(--font-geist-mono);

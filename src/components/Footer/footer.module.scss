@@ -1,5 +1,6 @@
-@import "@/styles/container";
-@import "@/styles/_mixins.scss";
+@use "@/styles/container" as *;
+@use "@/styles/mixins" as *;
+@use "@/styles/variables" as *;
 
 .container__footer {
   display: flex;
@@ -46,7 +47,7 @@
 
 .list__column {
   @include flex;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
   gap: 12px;
   margin-right: auto;
