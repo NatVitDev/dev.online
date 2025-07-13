@@ -18,17 +18,44 @@
   "Collection": {
     "collectionsTitle": "Collections"
   },
-  "Services": {
-    "servicesTitle": "Our Services",
-    "customTailoring": "",
-    "qualityControl": "",
-    "steaming": "",
-    "stylistConsultation": "",
-    "weddingStorage": "",
-    "dressAlterations": "",
-    "everydayClothing": "",
-    "eveningDressRental": ""
-  },
+  "Services": [
+    {
+      "ServicesId": 1,
+      "ServicesTitle": "Starter",
+      "ServicesDescription": "Landing page",
+      "ServicesPrice": "500$",
+      "ServicesFeatures": [
+        "UX/UI design",
+        "Basic animations",
+        "Responsive for tablets and mobiles",
+        "SEO",
+        "Website hosting",
+        "Google Analytics"
+      ],
+      "ServicesLink": "#order"
+    },
+    {
+      "ServicesId": 2,
+      "ServicesTitle": "Medium",
+      "ServicesDescription": "Up to 5 pages",
+      "ServicesPrice": "1000$",
+      "ServicesFeatures": [
+        "Starter + CMS",
+        "Advanced animations"
+      ],
+      "ServicesLink": "#order"
+    },
+    {
+      "ServicesId": 3,
+      "ServicesTitle": "Maximum",
+      "ServicesDescription": "From 6 pages",
+      "ServicesPrice": "2000$",
+      "ServicesFeatures": [
+        "Medium + E-Commerce"
+      ],
+      "ServicesLink": "#order"
+    }
+  ],
   "Contacts": {
     "contactTitle": "Contacts",
     "address": "",
