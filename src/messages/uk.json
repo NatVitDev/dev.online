@@ -18,17 +18,32 @@
   "Collection": {
     "collectionsTitle": "Колекції"
   },
-  "Services": {
-    "servicesTitle": "Наші послуги",
-    "customTailoring": "",
-    "qualityControl": "",
-    "steaming": "",
-    "stylistConsultation": "",
-    "weddingStorage": "",
-    "dressAlterations": "",
-    "everydayClothing": "",
-    "eveningDressRental": ""
-  },
+  "Services": [
+    {
+      "ServicesId": 1,
+      "ServicesTitle": "Стартер",
+      "ServicesDescription": "Лендінг",
+      "ServicesPrice": "500$",
+      "ServicesFeatures": ["UX/UI дизайн", "Базові анімація", "Адаптація під планшети та мобільні", "SEO", "Xостинг сайту", "Google аналітика"],
+      "ServicesLink": "#order"
+    },
+    {
+      "ServicesId": 2,
+      "ServicesTitle": "Середній",
+      "ServicesDescription": "до 5 сторінок",
+      "ServicesPrice": "1000$",
+      "ServicesFeatures": ["Стартер + CMS", "Складні анімацій"],
+      "ServicesLink": "#order"
+    },
+    {
+      "ServicesId": 3,
+      "ServicesTitle": "Максимум",
+      "ServicesDescription": "від 6 сторінок",
+      "ServicesPrice": "2000$",
+      "ServicesFeatures": ["Середній + E-Commerce"],
+      "ServicesLink": "#order"
+    }
+  ],
   "Contacts": {
     "contactTitle": "Контакти",
     "address": "",
