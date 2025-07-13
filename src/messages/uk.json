@@ -18,6 +18,9 @@
   "Collection": {
     "collectionsTitle": "Колекції"
   },
+  "Prices": {
+    "Title": "Прайс",
+    "Order": "Замовити",
   "Services": [
     {
       "ServicesId": 1,
@@ -43,7 +46,8 @@
       "ServicesFeatures": ["Середній + E-Commerce"],
       "ServicesLink": "#order"
     }
-  ],
+  ]
+},
   "Contacts": {
     "contactTitle": "Контакти",
     "address": "",
