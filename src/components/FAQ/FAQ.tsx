@@ -35,7 +35,7 @@ const FAQ = () => {
   };
 
   return (
-    <section>
+    <section className={s.FAQBlock}>
       <div className={s.container}>
         <h2 className={s.FAQBlockTitle}>{t("title")}</h2>
         <div className={s.FAQList}>

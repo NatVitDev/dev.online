@@ -2,6 +2,10 @@
 @use "@/styles/mixins" as *;
 @use "@/styles/container" as *;
 
+.priceBlock{
+  padding: 40px 0;
+}
+
 .priceBlockTitle {
   font-family: var(--font-geist-mono);
   @include fontSize(52px, 400, 88px);

@@ -2,6 +2,10 @@
 @use "@/styles/mixins" as *;
 @use "@/styles/container" as *;
 
+.FAQBlock {
+  padding: 40px 0;
+}
+
 .FAQBlockTitle {
   font-family: var(--font-geist-mono);
   @include fontSize(52px, 400, 88px);
@@ -16,10 +20,10 @@
 .FAQItem {
   width: 100%;
   margin-left: auto;
-  @include mediaQuery ($screen-size-m) {
+  @include mediaQuery($screen-size-m) {
     width: 80%;
   }
-  @include mediaQuery ($screen-size-l) {
+  @include mediaQuery($screen-size-l) {
     width: 70%;
   }
 }
