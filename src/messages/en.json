@@ -79,10 +79,26 @@
     "successMessage": "The request has been successfully sent! We will contact you soon 😊"
   },
   "Faq": {
-    "title": "Frequently Asked Questions",
+    "title": "FAQ",
     "item1": {
-      "question": "Do you offer custom tailoring for dresses?",
-      "answer": "Yes, we create dresses tailored to your design and preferences."
+      "question": "Do you offer custom orders?",
+      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
+    },
+    "item2": {
+      "question": "How long does website development take?",
+      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
+    },
+    "item3": {
+      "question": "Can I edit the website myself?",
+      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
+    },
+    "item4": {
+      "question": "What technologies do you use?",
+      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
+    },
+    "item5": {
+      "question": "Is SEO included in the price?",
+      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
     }
   },
   "Feedback": {
