@@ -1,29 +1,24 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import s from "./Prices.module.scss";
-import servicesData from "@/messages/uk.json";
 import Button from "../Button/Button";
-
-type Service = {
-  ServicesId: number;
-  ServicesTitle: string;
-  ServicesDescription: string;
-  ServicesPrice: string;
-  ServicesFeatures: string[];
-  ServicesLink: string;
-};
+import { useTranslations } from "next-intl";
 
 const Prices = () => {
-  const [services, setServices] = useState<Service[]>([]);
-
-  useEffect(() => {
-    setServices(servicesData.Services);
-  }, []);
+  const t = useTranslations("Prices");
+  const services = t.raw("Services") as Array<{
+    ServicesId: number;
+    ServicesTitle: string;
+    ServicesDescription: string;
+    ServicesPrice: string;
+    ServicesFeatures: string[];
+    ServicesLink: string;
+  }>;
 
   return (
     <section className={s.priceBlock}>
-      <h2 className={s.priceBlockTitle}>Прайс</h2>
+      <h2 className={s.priceBlockTitle}>{t("Title")}</h2>
       <div className={s.priceBlockContainer}>
         {services.map((service) => (
           <div key={service.ServicesId} className={s.card}>
@@ -37,7 +32,9 @@ const Prices = () => {
                 ))}
               </ul>
             </div>
-            <Button className={s.cartButton}>Замовити</Button>
+            <Button className={s.cartButton}>
+              {t("Order")}
+            </Button>
           </div>
         ))}
       </div>
@@ -46,3 +43,5 @@ const Prices = () => {
 };
 
 export default Prices;
+
+

@@ -18,6 +18,9 @@
   "Collection": {
     "collectionsTitle": "Collections"
   },
+  "Prices": {
+    "Title": "Prices",
+    "Order": "Order",
   "Services": [
     {
       "ServicesId": 1,
@@ -55,7 +58,8 @@
       ],
       "ServicesLink": "#order"
     }
-  ],
+  ]
+  },
   "Contacts": {
     "contactTitle": "Contacts",
     "address": "",
