@@ -3,69 +3,68 @@
 @import "@/styles/variables";
 
 .priceBlockTitle {
-    font-family: var(--font-geist-mono);
-    @include fontSize(52px, 400, 88px);
-    color: $title-color;
+  font-family: var(--font-geist-mono);
+  @include fontSize(52px, 400, 88px);
+  color: $title-color;
 }
 
 .priceBlock {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
-  .priceBlockContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
+.priceBlockContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card {
+  background-color: $background-color;
+  border: 1px solid $title-color;
+  padding: 40px 66px;
+  border-radius: 4px;
+  flex: 1 1 384px;
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  @include fontSize(38px, 600, 53px);
+  text-align: center;
+  margin-bottom: 10px;
+  color: $title-color;
+}
+
+.description {
+  @include fontSize(28px, 400, 39px);
+  text-align: center;
+  color: $text-color;
+}
+
+.price {
+  @include fontSize(28px, 400, 39px);
+  text-align: center;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+
+.featureList {
+  @include fontSize(16px, 400, 27px);
+  color: $text-color;
+  list-style: disc;
+  padding-left: 18px;
+  margin-bottom: 36px;
+
+  li {
+    position: relative;
+    margin-bottom: 0;
   }
-  
-  .card {
-    background-color: $background-color;
-    border: 1px solid $title-color;
-    padding: 40px 66px;
-    border-radius: 4px;
-    flex: 1 1 384px;
-    max-width: 384px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .title {
-    @include fontSize(38px, 600, 53px);
-    text-align: center;
-    margin-bottom: 10px;
-    color: $title-color;
-  }
-  
-  .description {
-    @include fontSize(28px, 400, 39px);
-    text-align: center;
-    color: $text-color;
-  }
-  
-  .price {
-    @include fontSize(28px, 400, 39px);
-    text-align: center;
-    color: $text-color;
-    margin-bottom: 20px;
-  }
-  
-  .featureList {
-    @include fontSize(16px, 400, 27px);
-    color: $text-color;
-    list-style: disc;
-    padding-left: 18px;
-    margin-bottom: 36px;
-  
-    li {
-      position: relative;
-      margin-bottom: 0;
-    }
-  }
-  
-  .cartButton {
-    width: 100%;
-  }
-  
+}
+
+.cartButton {
+  width: 100%;
+}

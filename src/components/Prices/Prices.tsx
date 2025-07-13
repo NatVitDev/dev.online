@@ -32,9 +32,7 @@ const Prices = () => {
                 ))}
               </ul>
             </div>
-            <Button className={s.cartButton}>
-              {t("Order")}
-            </Button>
+            <Button className={s.cartButton}>{t("Order")}</Button>
           </div>
         ))}
       </div>
@@ -43,5 +41,3 @@ const Prices = () => {
 };
 
 export default Prices;
-
-
