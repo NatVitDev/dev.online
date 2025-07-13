@@ -1,4 +1,4 @@
-@import "./variables";
+@use "./variables" as *;
 
 @mixin mediaQuery($breakpoint) {
   @media screen and (min-width: $breakpoint) {
@@ -44,7 +44,7 @@
 @mixin fontSize($fs: 14px, $fw: 400px, $lh: 14px) {
   font-size: $fs;
   font-weight: $fw;
-  line-height: $lh / $fs;
+  line-height: calc(#{$lh} / #{$fs});
 }
 
 @mixin hover($property, $value) {

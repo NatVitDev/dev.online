@@ -1,7 +1,8 @@
-@import "@/styles/mixins";
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
 
 .button {
-  @include flexCenter();
+  @include flexCenter;
   @include fontSize(16px, 500, 27.2px);
 
   text-align: center;
