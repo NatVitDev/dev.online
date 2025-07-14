@@ -10,6 +10,13 @@
   font-family: var(--font-geist-mono);
   @include fontSize(52px, 400, 88px);
   color: $title-color;
+  margin-bottom: 4px;
+}
+
+.FAQBlockRequesr {
+  @include fontSize(22px, 400, 30px);
+  color: $text-color;
+  margin-bottom: 21px;
 }
 
 .FAQList {
