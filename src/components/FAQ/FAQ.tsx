@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useTranslations, useMessages } from "next-intl";
 import s from "./FAQ.module.scss";
 
@@ -28,10 +28,23 @@ const FAQ = () => {
   }
 
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const refs = useRef<(HTMLDivElement | null)[]>([]);
 
   const toggleItem = (index: number) => {
     setOpenIndex((prev) => (prev === index ? null : index));
   };
+
+  useEffect(() => {
+    refs.current.forEach((el, i) => {
+      if (el) {
+        if (i === openIndex) {
+          el.style.height = `${el.scrollHeight}px`;
+        } else {
+          el.style.height = "0px";
+        }
+      }
+    });
+  }, [openIndex]);
 
   return (
     <section className={s.FAQBlock}>
@@ -45,8 +58,6 @@ const FAQ = () => {
                 className={s.FAQQuestion}
                 onClick={() => toggleItem(index)}
                 aria-expanded={openIndex === index}
-                aria-controls={`faq-answer-${index}`}
-                id={`faq-question-${index}`}
               >
                 <span>{item.question}</span>
                 <span className={s.icon}>
@@ -60,15 +71,14 @@ const FAQ = () => {
                   />
                 </span>
               </button>
-              {openIndex === index && (
-                <div
-                  className={s.FAQAnswer}
-                  id={`faq-answer-${index}`}
-                  aria-labelledby={`faq-question-${index}`}
-                >
-                  {item.answer}
-                </div>
-              )}
+              <div
+                ref={(el) => {
+                  refs.current[index] = el;
+                }}
+                className={`${s.FAQAnswerWrapper}`}
+              >
+                <div className={s.FAQAnswer}>{item.answer}</div>
+              </div>
             </div>
           ))}
         </div>
@@ -78,4 +88,3 @@ const FAQ = () => {
 };
 
 export default FAQ;
-
