@@ -72,7 +72,9 @@ const FAQ = () => {
                 </span>
               </button>
               <div
-                ref={(el) => (refs.current[index] = el)}
+                ref={(el) => {
+                  refs.current[index] = el;
+                }}
                 className={`${s.FAQAnswerWrapper}`}
               >
                 <div className={s.FAQAnswer}>{item.answer}</div>
@@ -86,4 +88,3 @@ const FAQ = () => {
 };
 
 export default FAQ;
-
