@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslations, useMessages } from "next-intl";
 import s from "./FAQ.module.scss";
 
@@ -27,7 +27,6 @@ const FAQ = () => {
     });
   }
 
-  // За замовчуванням відкриваємо перший елемент
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleItem = (index: number) => {
