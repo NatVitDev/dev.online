@@ -19,38 +19,93 @@
     "collectionsTitle": "Collections"
   },
   "Prices": {
-    "Title": "Prices",
-    "Order": "Order",
+    "Title": "Pricing",
+    "Order": "Order now",
     "Services": [
       {
         "ServicesId": 1,
         "ServicesTitle": "Starter",
-        "ServicesDescription": "Landing page",
-        "ServicesPrice": "500$",
+        "ServicesDescription": "Landing",
+        "ServicesPrice": "$500",
         "ServicesFeatures": [
-          "UX/UI design",
-          "Basic animations",
-          "Responsive for tablets and mobiles",
-          "SEO",
-          "Website hosting",
-          "Google Analytics"
+          "Template design",
+          "Responsive layout",
+          "Contact form",
+          "Basic SEO optimization",
+          "Google Analytics",
+          "Hosting support"
         ],
         "ServicesLink": "#order"
       },
       {
         "ServicesId": 2,
-        "ServicesTitle": "Medium",
-        "ServicesDescription": "Up to 5 pages",
-        "ServicesPrice": "1000$",
-        "ServicesFeatures": ["Starter + CMS", "Advanced animations"],
+        "ServicesTitle": "Basic",
+        "ServicesDescription": "up to 3 pages",
+        "ServicesPrice": "$800",
+        "ServicesFeatures": [
+          "Template customization",
+          "WordPress + Elementor",
+          "Scroll animations",
+          "Gallery / Portfolio",
+          "Request form + map"
+        ],
         "ServicesLink": "#order"
       },
       {
         "ServicesId": 3,
-        "ServicesTitle": "Maximum",
-        "ServicesDescription": "From 6 pages",
-        "ServicesPrice": "2000$",
-        "ServicesFeatures": ["Medium + E-Commerce"],
+        "ServicesTitle": "Standard",
+        "ServicesDescription": "up to 5 pages",
+        "ServicesPrice": "$1200",
+        "ServicesFeatures": [
+          "Custom design in Figma",
+          "Next.js or WordPress",
+          "CMS for content",
+          "Multilingual (2 languages)",
+          "SEO structure + meta-data"
+        ],
+        "ServicesLink": "#order"
+      },
+      {
+        "ServicesId": 4,
+        "ServicesTitle": "Business",
+        "ServicesDescription": "up to 10 pages",
+        "ServicesPrice": "$2000",
+        "ServicesFeatures": [
+          "Corporate UX design",
+          "CRM/API integrations",
+          "Blog, cases, news",
+          "User dashboard",
+          "Training & backups"
+        ],
+        "ServicesLink": "#order"
+      },
+      {
+        "ServicesId": 5,
+        "ServicesTitle": "E-Commerce",
+        "ServicesDescription": "Shop",
+        "ServicesPrice": "from $3000",
+        "ServicesFeatures": [
+          "WooCommerce or Next.js",
+          "Cart, filters, user area",
+          "Stripe/PayPal integration",
+          "SEO + performance",
+          "Product management panel"
+        ],
+        "ServicesLink": "#order"
+      },
+      {
+        "ServicesId": 6,
+        "ServicesTitle": "Individual",
+        "ServicesDescription": "on request",
+        "ServicesPrice": "from $100",
+        "ServicesFeatures": [
+          "Section or block design",
+          "Mobile responsiveness",
+          "SEO audit",
+          "Form integration",
+          "Site migration",
+          "Custom block (Elementor/React)"
+        ],
         "ServicesLink": "#order"
       }
     ]
