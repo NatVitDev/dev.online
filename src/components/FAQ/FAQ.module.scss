@@ -1,0 +1,54 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+@use "@/styles/container" as *;
+
+.FAQBlock {
+  padding: 40px 0;
+}
+
+.FAQBlockTitle {
+  font-family: var(--font-geist-mono);
+  @include fontSize(52px, 400, 88px);
+  color: $title-color;
+}
+
+.FAQList {
+  width: 100%;
+  position: relative;
+}
+
+.FAQItem {
+  width: 100%;
+  margin-left: auto;
+  @include mediaQuery($screen-size-m) {
+    width: 80%;
+  }
+  @include mediaQuery($screen-size-l) {
+    width: 70%;
+  }
+}
+
+.FAQQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $title-color;
+  color: $background-color;
+  border: none;
+  @include fontSize(22px, 400, 30px);
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 24px 16px;
+  margin-bottom: 2px;
+}
+
+.icon img {
+  display: block;
+}
+
+.FAQAnswer {
+  @include fontSize(16px, 400, 27px);
+  padding: 24px 16px;
+  color: $text-color;
+}
