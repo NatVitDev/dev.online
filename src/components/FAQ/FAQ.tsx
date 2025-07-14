@@ -37,6 +37,7 @@ const FAQ = () => {
     <section className={s.FAQBlock}>
       <div className={s.container}>
         <h2 className={s.FAQBlockTitle}>{t("title")}</h2>
+        <p className={s.FAQBlockRequesr}>{t("faq-request")}</p>
         <div className={s.FAQList}>
           {faqItems.map((item, index) => (
             <div key={index} className={s.FAQItem}>

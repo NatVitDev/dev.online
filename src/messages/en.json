@@ -79,26 +79,47 @@
     "successMessage": "The request has been successfully sent! We will contact you soon 😊"
   },
   "Faq": {
-    "title": "FAQ",
+    "title": "Frequently Asked Questions",
+    "faq-request": "Didn't find the question you're interested in?",
     "item1": {
-      "question": "Do you offer custom orders?",
-      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
+      "question": "How long does it take to develop a business card website or a one-page landing?",
+      "answer": "For custom-built websites using Next.js, the development time ranges from 2 to 4 weeks, depending on the complexity of the design and animations. If it's a WordPress site using Elementor, a basic template can be set up in 1–2 weeks. However, if custom blocks are needed, the timeframe may extend to 3 weeks."
     },
     "item2": {
-      "question": "How long does website development take?",
-      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
+      "question": "Can I order a custom website design?",
+      "answer": "Yes, you can get a unique design created in Figma with full customization — fonts, iconography, animations, and more. For WordPress sites built with Elementor, we can also create custom blocks and templates that integrate seamlessly into the CMS."
     },
     "item3": {
-      "question": "Can I edit the website myself?",
-      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
+      "question": "Do you provide mobile responsiveness?",
+      "answer": "Absolutely — for Next.js websites, we ensure full responsiveness across all major screen sizes, including image optimization and lazy-loading. For Elementor sites, we use its built-in breakpoints and enhance layouts with custom CSS to deliver excellent UX on smartphones and tablets."
     },
     "item4": {
-      "question": "What technologies do you use?",
-      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
+      "question": "What technologies do you use — and when should I choose Next.js vs WordPress + Elementor?",
+      "answer": "If your project requires a high level of customization, unique logic, interactions, or API integrations — we choose Next.js with React, TypeScript, Tailwind, etc. If you need to quickly launch a business card website or blog with easy editing — we use WordPress with Elementor. For online stores — WooCommerce."
     },
     "item5": {
-      "question": "Is SEO included in the price?",
-      "answer": "Lorem ipsum dolor sit amet consectetur. Sit mollis sed tempor et quam pellentesque. Scelerisque nullam amet at et. Elit venenatis neque auctor vel sem. Sit augue fermentum egestas elit adipiscing. Imperdiet quis neque ipsum in id tempor cras sit donec. Mauris ante velit mauris condimentum imperdiet dignissim lectus. Ultricies pellentesque id nunc nunc venenatis vulputate viverra mi. Aliquam nunc morbi in enim. Turpis phasellus cursus lectus eleifend tellus arcu nisi fermentum."
+      "question": "Will I have access to edit the content later?",
+      "answer": "Yes — for WordPress + Elementor, you will have access to the visual builder where you can change pages, blogs, images, and text. We also provide a video guide or a live walkthrough. For Next.js sites, we can connect a headless CMS (e.g., Sanity, Strapi) so you can update content without a developer."
+    },
+    "item6": {
+      "question": "Is basic SEO optimization included in the package?",
+      "answer": "Yes, basic SEO is included: we set up title tags, meta descriptions, Open Graph tags, clean URLs, image optimization, and loading speed improvements. For Next.js, we also include a sitemap, robots.txt, and Google Analytics integration. For WordPress — we install Yoast SEO."
+    },
+    "item7": {
+      "question": "What should I prepare before starting the development?",
+      "answer": "Prepare your content: texts, logo, color palette, examples of websites you like, and a list of required features. If the site is built with WordPress — we also need images for the page structure and required plugins. For custom Next.js projects — we define requirements for interactivity and integrations (APIs, forms, CRM, etc.)."
+    },
+    "item8": {
+      "question": "Do you assist with hosting, domain, and SSL?",
+      "answer": "Yes, we help you choose the right hosting: Vercel, Netlify for Next.js — or WordPress hosting — and we configure SSL. We also assist in migrating the website to your server or hosting. The cost of domain and hosting is not included, but we make this process simple and clear for you."
+    },
+    "item9": {
+      "question": "Do you offer post-launch support?",
+      "answer": "We offer several support packages: technical updates (Next.js, WordPress), backups, content updates, and security monitoring. For Next.js websites, we can also provide hosting and CI/CD setup."
+    },
+    "item10": {
+      "question": "If I need an online store — which platforms do you recommend?",
+      "answer": "We build online stores using WooCommerce (WordPress) or Next.js with a headless CMS + Stripe/PayPal integration. WooCommerce is sufficient for small stores, while more complex solutions use headless with custom integrations."
     }
   },
   "Feedback": {
