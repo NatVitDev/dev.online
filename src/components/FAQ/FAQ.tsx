@@ -47,7 +47,7 @@ const FAQ = () => {
   }, [openIndex]);
 
   return (
-    <section className={s.FAQBlock}>
+    <section className={s.FAQBlock} id="FAQ">
       <div className={s.container}>
         <h2 className={s.FAQBlockTitle}>{t("title")}</h2>
         <p className={s.FAQBlockRequesr}>{t("faq-request")}</p>

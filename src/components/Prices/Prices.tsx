@@ -17,7 +17,7 @@ const Prices = () => {
   }>;
 
   return (
-    <section className={s.priceBlock}>
+    <section className={s.priceBlock} id="Prices">
       <div className={s.container}>
         <h2 className={s.priceBlockTitle}>{t("Title")}</h2>
         <div className={s.priceBlockContainer}>
