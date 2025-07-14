@@ -28,29 +28,84 @@
         "ServicesDescription": "Лендінг",
         "ServicesPrice": "500$",
         "ServicesFeatures": [
-          "UX/UI дизайн",
-          "Базові анімація",
-          "Адаптація під планшети та мобільні",
-          "SEO",
-          "Xостинг сайту",
-          "Google аналітика"
+          "Шаблонний дизайн",
+          "Адаптивна верстка",
+          "Контактна форма",
+          "Базова SEO-оптимізація",
+          "Google Analytics",
+          "Хостинг-супровід"
         ],
         "ServicesLink": "#order"
       },
       {
         "ServicesId": 2,
-        "ServicesTitle": "Середній",
-        "ServicesDescription": "до 5 сторінок",
-        "ServicesPrice": "1000$",
-        "ServicesFeatures": ["Стартер + CMS", "Складні анімацій"],
+        "ServicesTitle": "Базовий",
+        "ServicesDescription": "до 3 сторінок",
+        "ServicesPrice": "800$",
+        "ServicesFeatures": [
+          "Кастомізація шаблону",
+          "WordPress + Elementor",
+          "Анімації при скролі",
+          "Галерея / Портфоліо",
+          "Форма заявки + мапа"
+        ],
         "ServicesLink": "#order"
       },
       {
         "ServicesId": 3,
-        "ServicesTitle": "Максимум",
-        "ServicesDescription": "від 6 сторінок",
+        "ServicesTitle": "Стандарт",
+        "ServicesDescription": "до 5 сторінок",
+        "ServicesPrice": "1200$",
+        "ServicesFeatures": [
+          "Унікальний дизайн у Figma",
+          "Next.js або WordPress",
+          "CMS для контенту",
+          "Мультимовність (2 мови)",
+          "SEO-структура + мета-дані"
+        ],
+        "ServicesLink": "#order"
+      },
+      {
+        "ServicesId": 4,
+        "ServicesTitle": "Бізнес",
+        "ServicesDescription": "до 10 сторінок",
         "ServicesPrice": "2000$",
-        "ServicesFeatures": ["Середній + E-Commerce"],
+        "ServicesFeatures": [
+          "Корпоративний UX-дизайн",
+          "Інтеграція з CRM/API",
+          "Блог, кейси, новини",
+          "Особистий кабінет",
+          "Навчання та резервні копії"
+        ],
+        "ServicesLink": "#order"
+      },
+      {
+        "ServicesId": 5,
+        "ServicesTitle": "E-Commerce",
+        "ServicesDescription": "Магазин",
+        "ServicesPrice": "від 3000$",
+        "ServicesFeatures": [
+          "WooCommerce або Next.js",
+          "Кошик, фільтри, кабінет",
+          "Stripe/PayPal інтеграція",
+          "SEO + швидкість",
+          "Панель керування товарами"
+        ],
+        "ServicesLink": "#order"
+      },
+      {
+        "ServicesId": 6,
+        "ServicesTitle": "Індивідуально",
+        "ServicesDescription": "по запиту",
+        "ServicesPrice": "від 100$",
+        "ServicesFeatures": [
+          "Дизайн блоку або секції",
+          "Адаптація для мобільних",
+          "SEO-аудит",
+          "Підключення форм",
+          "Міграція сайту",
+          "Кастомний блок (Elementor/React)"
+        ],
         "ServicesLink": "#order"
       }
     ]

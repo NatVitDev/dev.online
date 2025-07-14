@@ -4,6 +4,8 @@
 
 .FAQBlock {
   padding: 40px 0;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .FAQBlockTitle {
@@ -27,11 +29,18 @@
 .FAQItem {
   width: 100%;
   margin-left: auto;
+  transition: transform $transition-time ease, filter $transition-time ease;
+  transform: translateX(0);
+  filter: blur(0);
   @include mediaQuery($screen-size-m) {
-    width: 80%;
+    width: 88%;
   }
   @include mediaQuery($screen-size-l) {
-    width: 70%;
+    width: 78%;
+  }
+  &:hover {
+    transform: translateX(-4px);
+    filter: blur(0);
   }
 }
 
