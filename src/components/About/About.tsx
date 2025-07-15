@@ -1,7 +1,9 @@
+import s from "./about.module.scss";
+
 const About = () => {
   return (
-    <section>
-      <div>About</div>
+    <section className={s.section}>
+      <div className={`${s.container}  `}>About</div>
     </section>
   );
 };

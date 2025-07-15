@@ -33,7 +33,6 @@ const Hero = () => {
   }, []);
 
   return (
-    // <section>
     <div className={`${s.container}  ${s.container__hero}`}>
       <section
         className={s.section__hero}
@@ -49,8 +48,13 @@ const Hero = () => {
             <span>O</span>
           </div>
         </h1>
+        <div className={s.laptop}></div>
 
-        <Button size="282">ЗАМОВИТИ САЙТ</Button>
+        <div className={s.container__laptop}>
+          <p className={s.text}>Свіже рішення для вашого бізнесу</p>
+          <Button size="282">ЗАМОВИТИ САЙТ</Button>
+        </div>
+
         <div className={` ${s.container__socialNetworks}`}>
           <div>
             <Link
