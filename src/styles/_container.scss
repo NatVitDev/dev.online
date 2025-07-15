@@ -13,6 +13,7 @@
     padding-right: 30px;
   }
   @include mediaQuery($screen-size-l) {
+    max-width: $screen-size-l;
     padding-left: 40px;
     padding-right: 40px;
   }
