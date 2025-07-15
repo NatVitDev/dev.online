@@ -29,16 +29,29 @@
   align-items: center;
 }
 
+// @mixin font(
+//   $fsMin: 14px,
+//   $fsPreferred: 2vw,
+//   $fsMax: 24px,
+//   $fw: 400,
+//   $lh: 14px
+// ) {
+//   font-size: clamp($fsMin, $fsPreferred, $fsMax);
+//   font-weight: $fw;
+//   line-height: $lh;
+// }
+
 @mixin font(
   $fsMin: 14px,
   $fsPreferred: 2vw,
   $fsMax: 24px,
   $fw: 400,
-  $lh: 14px
+  $lhRatio: 1.3
 ) {
-  font-size: clamp($fsMin, $fsPreferred, $fsMax);
+  $fontSize: clamp($fsMin, $fsPreferred, $fsMax);
+  font-size: $fontSize;
   font-weight: $fw;
-  line-height: $lh;
+  line-height: calc(#{$lhRatio} * #{$fontSize});
 }
 
 @mixin fontSize($fs: 14px, $fw: 400px, $lh: 14px) {

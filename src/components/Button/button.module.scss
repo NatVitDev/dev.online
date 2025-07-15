@@ -5,24 +5,33 @@
   @include flexCenter;
   @include fontSize(16px, 500, 27.2px);
 
-  text-align: center;
-
   background-color: $primary-button-background-color;
   color: #ffffff;
-
-  width: 213px;
   height: 51px;
   border-radius: 4px;
-  padding: 12px 56px;
   border: none;
   cursor: pointer;
   opacity: 1;
   transition: background-color 0.3s ease;
+  text-align: center;
 
   @include hover(background-color, $primary-button-background-hover);
+  padding: 12px 56px;
+}
 
-  //   @include mediaMaxQuery(768px) {
-  //     width: 100%;
-  //     padding: 10px 40px;
-  //   }
+.button--213 {
+  width: 213px;
+}
+.button--282 {
+  width: 282px;
+}
+.button--252 {
+  width: 252px;
+}
+.button--407 {
+  width: 407px;
+}
+
+.button--full {
+  width: 100%;
 }

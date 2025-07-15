@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <Nav className={s.list__column} />
 
-        <Button>ЗВ’ЯЗАТИСЬ</Button>
+        <Button size="282">ЗВ’ЯЗАТИСЬ</Button>
       </div>
     </footer>
   );
