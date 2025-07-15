@@ -54,6 +54,12 @@
   line-height: calc(#{$lhRatio} * #{$fontSize});
 }
 
+// @mixin fluidFont($min, $preferredVW, $max, $fw: 400, $lhRatio: 1.3) {
+//   font-size: clamp($min, $preferredVW, $max);
+//   font-weight: $fw;
+//   line-height: calc(#{$lhRatio} * #{$max}); // Або також адаптивний line-height
+// }
+
 @mixin fontSize($fs: 14px, $fw: 400px, $lh: 14px) {
   font-size: $fs;
   font-weight: $fw;

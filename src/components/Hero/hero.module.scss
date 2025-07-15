@@ -4,27 +4,26 @@
 
 @use "@/components/SocialNetworks/socialNetworks.module.scss";
 
-.container__socialNetworks {
-  display: flex;
-  gap: 4px;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
 .section__hero {
+  position: relative;
+
   background-color: #fff;
   background: url("/flower.png");
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  // padding-top: 50px;
 }
 
-// ======
 .title {
-  // @include fontSize(156px, 800, 1.3);
-  @include font(32px, 8vw, 156px, 800, 1.3);
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  // @include flex;
+
+  width: fit-content;
+  padding-top: 160px;
+  @include font(32px, 12.5vw, 156px, 800, 1.3);
 }
 
 .char {
@@ -33,8 +32,9 @@
   cursor: pointer;
 
   span {
-    color: transparent;
+    color: #fff;
     -webkit-text-stroke: 1px $title-color;
+
     transition: 0.3s ease;
     display: inline-block;
   }
@@ -45,7 +45,6 @@
     inset: 0;
     @include flex;
     color: $title-color;
-
     transform: scaleY(0);
     transition: transform 0.3s ease-in-out;
     z-index: 1;
@@ -69,6 +68,41 @@
     color: transparent;
     -webkit-text-stroke: 1px $title-color;
   }
+}
+
+.laptop {
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  background: url("/laptop.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 511px;
+
+  height: 409px;
+}
+
+.text {
+  max-width: 220px;
+  @include fontSize(22px, 400, 1.4);
+
+  color: #014421;
+  padding-bottom: 112px;
+}
+
+.container__socialNetworks {
+  position: absolute;
+  right: 0;
+  top: 40%;
+
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  // align-items: flex-end;
 }
 
 .network__list {
