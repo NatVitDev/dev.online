@@ -6,24 +6,41 @@
 
 .section__hero {
   position: relative;
-
   background-color: #fff;
-  background: url("/flower.png");
+  background: url("/flower.png") no-repeat center;
+  // background-size: 75vw auto;
+  background-size: clamp(200px, 75vw, 935px) auto;
 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  // @include mediaQuery($screen-size-s) {
+  // }
+  // @include mediaQuery($screen-size-m) {
+  // }
+  // @include mediaQuery($screen-size-l) {
+  // }
+}
+
+.section__hero__title {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 20%);
+  max-width: 1100px;
+  width: 100%;
 }
 
 .title {
   position: relative;
   z-index: 1;
   margin: 0 auto;
-  // @include flex;
-
   width: fit-content;
-  padding-top: 160px;
+
   @include font(32px, 12.5vw, 156px, 800, 1.3);
+  @include mediaQuery($screen-size-s) {
+  }
+  @include mediaQuery($screen-size-m) {
+  }
+  @include mediaQuery($screen-size-l) {
+  }
 }
 
 .char {
@@ -73,25 +90,49 @@
 .laptop {
   position: absolute;
   left: 50%;
-  bottom: -60px;
-  transform: translateX(-50%);
-  background-color: #fff;
-  background: url("/laptop.png");
+  bottom: 25%;
+  transform: translate(-50%, 58%);
 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 511px;
+  background: url("/laptop.png") no-repeat center;
+  background-size: contain;
 
-  height: 409px;
+  @include mediaQuery($screen-size-s) {
+    width: 100vw;
+    max-width: 320px;
+    aspect-ratio: 185 / 145;
+    background-size: contain;
+  }
+
+  @include mediaQuery($screen-size-m) {
+    width: 80vw;
+    max-width: 412px;
+    aspect-ratio: 411 / 330;
+  }
+
+  @include mediaQuery($screen-size-l) {
+    width: 75vw;
+    max-width: 511px;
+    aspect-ratio: 511 / 409;
+  }
+}
+
+.container__text {
+  position: absolute;
+  bottom: 0;
 }
 
 .text {
-  max-width: 220px;
-  @include fontSize(22px, 400, 1.4);
+  @include mediaQuery($screen-size-s) {
+    display: none;
+  }
+  @include mediaQuery($screen-size-m) {
+    display: block;
+    max-width: 220px;
+    @include fontSize(22px, 400, 1.4);
 
-  color: #014421;
-  padding-bottom: 112px;
+    color: #014421;
+    padding-bottom: 112px;
+  }
 }
 
 .container__socialNetworks {

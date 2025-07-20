@@ -8,7 +8,7 @@ import Button from "../Button/Button";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
-  const [dynamicHeight, setDynamicHeight] = useState(400);
+  const [dynamicHeight, setDynamicHeight] = useState(190);
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
       const w1 = 768,
         h1 = 400;
       const w2 = 1280,
-        h2 = 635;
+        h2 = 600;
 
       const calculatedHeight = h1 + ((w - w1) * (h2 - h1)) / (w2 - w1);
       setDynamicHeight(calculatedHeight);
@@ -38,19 +38,25 @@ const Hero = () => {
         className={s.section__hero}
         style={{ height: `${dynamicHeight}px` }}
       >
-        <h1 className={s.title}>
-          {["W", "E", "B", " ", "S", "T", "U", "D", "I"].map((char, index) => (
-            <div key={index} className={s.char} data-text={char}>
-              <span>{char === " " ? "\u00A0" : char}</span>
+        <div className={s.section__hero__title}>
+          <h1 className={s.title}>
+            {["W", "E", "B", " ", "S", "T", "U", "D", "I"].map(
+              (char, index) => (
+                <div key={index} className={s.char} data-text={char}>
+                  <span>{char === " " ? "\u00A0" : char}</span>
+                </div>
+              )
+            )}
+            <div className={`${s.char} ${s.filled}`} data-text="O">
+              <span>O</span>
             </div>
-          ))}
-          <div className={`${s.char} ${s.filled}`} data-text="O">
-            <span>O</span>
-          </div>
-        </h1>
-        <div className={s.laptop}></div>
+          </h1>
+        </div>
+        <div className={s.laptopWrapper}>
+          <div className={s.laptop}></div>
+        </div>
 
-        <div className={s.container__laptop}>
+        <div className={s.container__text}>
           <p className={s.text}>Свіже рішення для вашого бізнесу</p>
           <Button size="282">ЗАМОВИТИ САЙТ</Button>
         </div>
