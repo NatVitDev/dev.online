@@ -8,7 +8,7 @@ interface ButtonProps {
   className?: string;
   type?: "button" | "submit" | "reset";
   onClick?: () => void;
-  size?: "282" | "252" | "407" | "full";
+  // size?: "282" | "252" | "407" | "full";
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,11 +16,11 @@ const Button: React.FC<ButtonProps> = ({
   className = "",
   type = "button",
   onClick,
-  size = "213",
+  // size = "213",
 }) => {
   return (
     <button
-      className={`${s.button} ${s[`button--${size}`]} ${className}`}
+      className={`${s.button} ${className}`}
       type={type}
       onClick={onClick}
     >
