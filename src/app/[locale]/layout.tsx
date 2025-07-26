@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
-import "@/styles/globals.scss";
 
 import { NextIntlClientProvider } from "next-intl";
 import { Locale, routing } from "@/i18n/routing";
@@ -10,6 +9,8 @@ import { getMessages } from "next-intl/server";
 import Header from "@/components/Header/Header";
 import { golos } from "@/utils/fonts";
 import Footer from "@/components/Footer/Footer";
+
+import "@/styles/globals.scss";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",

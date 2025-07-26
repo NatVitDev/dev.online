@@ -3,35 +3,15 @@
 
 .button {
   @include flexCenter;
-  @include fontSize(16px, 500, 27.2px);
-
+  @include font(14px, 1.2vw, 14px, 500, 1.7);
   background-color: $primary-button-background-color;
   color: #ffffff;
-  height: 51px;
+  text-align: center;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   opacity: 1;
-  transition: background-color 0.3s ease;
-  text-align: center;
-
-  @include hover(background-color, $primary-button-background-hover);
-  padding: 12px 56px;
-}
-
-.button--213 {
-  width: 213px;
-}
-.button--282 {
-  width: 282px;
-}
-.button--252 {
-  width: 252px;
-}
-.button--407 {
-  width: 407px;
-}
-
-.button--full {
-  width: 100%;
+  padding: 8px;
+  // transition: background-color 0.3s ease;
+  @include hover(background-color, 0.3s, $primary-button-background-hover);
 }

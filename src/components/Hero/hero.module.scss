@@ -5,27 +5,42 @@
 @use "@/components/SocialNetworks/socialNetworks.module.scss";
 
 .section__hero {
+  aspect-ratio: 16 / 9;
   position: relative;
   background-color: #fff;
   background: url("/flower.png") no-repeat center;
-  // background-size: 75vw auto;
   background-size: clamp(200px, 75vw, 935px) auto;
+  &::after {
+    content: "";
+    position: absolute;
 
-  // @include mediaQuery($screen-size-s) {
-  // }
-  // @include mediaQuery($screen-size-m) {
-  // }
-  // @include mediaQuery($screen-size-l) {
-  // }
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, 58%);
+    background: url("/laptop.png") no-repeat center;
+    background-size: contain;
+    width: 53vw;
+    max-width: 511px;
+    aspect-ratio: 185 / 145;
+
+    @include mediaQuery($screen-size-m) {
+      aspect-ratio: 411 / 330;
+    }
+
+    @include mediaQuery($screen-size-l) {
+      aspect-ratio: 511 / 409;
+    }
+  }
 }
 
 .section__hero__title {
   position: absolute;
   left: 50%;
-  top: 20%;
-  transform: translate(-50%, 20%);
+  top: 25%;
+  transform: translate(-50%, 25%);
   max-width: 1100px;
   width: 100%;
+  z-index: 1;
 }
 
 .title {
@@ -34,7 +49,7 @@
   margin: 0 auto;
   width: fit-content;
 
-  @include font(32px, 12.5vw, 156px, 800, 1.3);
+  @include font(32px, 13vw, 156px, 800, 1.3);
   @include mediaQuery($screen-size-s) {
   }
   @include mediaQuery($screen-size-m) {
@@ -87,38 +102,28 @@
   }
 }
 
-.laptop {
-  position: absolute;
-  left: 50%;
-  bottom: 25%;
-  transform: translate(-50%, 58%);
-
-  background: url("/laptop.png") no-repeat center;
-  background-size: contain;
-
-  @include mediaQuery($screen-size-s) {
-    width: 100vw;
-    max-width: 320px;
-    aspect-ratio: 185 / 145;
-    background-size: contain;
-  }
-
-  @include mediaQuery($screen-size-m) {
-    width: 80vw;
-    max-width: 412px;
-    aspect-ratio: 411 / 330;
-  }
-
-  @include mediaQuery($screen-size-l) {
-    width: 75vw;
-    max-width: 511px;
-    aspect-ratio: 511 / 409;
-  }
-}
-
 .container__text {
   position: absolute;
-  bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: -100px;
+
+  @include mediaQuery($screen-size-s) {
+  }
+  @include mediaQuery($screen-size-m) {
+  }
+  @include mediaQuery($screen-size-l) {
+    bottom: -20px;
+  }
+}
+.box__button {
+  @include flex();
+
+  justify-content: space-around;
+
+  @include mediaQuery($screen-size-m) {
+    justify-content: space-between;
+  }
 }
 
 .text {
@@ -128,22 +133,44 @@
   @include mediaQuery($screen-size-m) {
     display: block;
     max-width: 220px;
-    @include fontSize(22px, 400, 1.4);
+    @include fontSize(18px, 400, 1.4);
 
     color: #014421;
     padding-bottom: 112px;
+  }
+  @include mediaQuery($screen-size-l) {
+    @include fontSize(22px, 400, 1.4);
+  }
+}
+
+.button__hero {
+  width: 139px;
+  height: 40px;
+
+  @include mediaQuery($screen-size-s) {
+  }
+  @include mediaQuery($screen-size-m) {
+    width: 180px;
+    height: 48px;
+  }
+  @include mediaQuery($screen-size-l) {
+    width: 282px;
+    height: 51px;
   }
 }
 
 .container__socialNetworks {
   position: absolute;
   right: 0;
-  top: 40%;
+  top: 65%;
 
   display: flex;
   gap: 4px;
   flex-direction: column;
-  // align-items: flex-end;
+
+  @include mediaQuery($screen-size-l) {
+    top: 40%;
+  }
 }
 
 .network__list {
@@ -153,18 +180,38 @@
 }
 
 .network__list__link {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+  @include mediaQuery($screen-size-l) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.network__list__icon {
+  width: 20px;
+  height: 20px;
+  @include mediaQuery($screen-size-l) {
+    width: 24px;
+    height: 24px;
+  }
 }
 .phone {
   background-color: #5451ff;
   outline-color: #5451ff;
 }
 .network__list__link__hero {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+  @include mediaQuery($screen-size-l) {
+    width: 40px;
+    height: 40px;
+  }
 }
 .network__list__icon__hero {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
+  @include mediaQuery($screen-size-l) {
+    width: 24px;
+    height: 24px;
+  }
 }

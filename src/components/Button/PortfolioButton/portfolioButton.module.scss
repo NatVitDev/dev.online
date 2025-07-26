@@ -1,0 +1,63 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.portfolioButton {
+  @include font(14px, 1.2vw, 14px, 500, 1.7);
+  text-align: start;
+
+  color: #014421;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #014421;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  width: auto;
+  height: 28px;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-bottom-color: $primary-button-background-hover;
+  }
+  @include mediaQuery($screen-size-m) {
+    height: 28px;
+    gap: 8px;
+  }
+
+  @include mediaQuery($screen-size-l) {
+    @include font(16px, 1.2vw, 16px, 500, 1.7);
+    height: 31px;
+    gap: 12px;
+  }
+}
+
+.iconWrapper {
+  @include flex();
+  justify-content: space-between;
+}
+.portfolioButton:hover .iconWrapper {
+  animation: shake 250ms;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
