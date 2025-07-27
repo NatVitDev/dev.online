@@ -8,10 +8,12 @@ import { useState, useRef, useEffect } from "react";
 import SvgIcon from "../SvgIcon/SvgIcon";
 import Button from "../Button/Button";
 import s from "./Header.module.scss";
+import { useToggleMenu } from "@/hooks/useToggleLocale";
 
 const Header = () => {
   const [showLocale, setShowLocale] = useState(false);
   const localeRef = useRef<HTMLDivElement>(null);
+  const { menuOpen, setMenuOpen } = useToggleMenu();
 
   const toggleLocale = () => setShowLocale((prev) => !prev);
 
@@ -33,11 +35,11 @@ const Header = () => {
         <Logo />
 
         <div className={s.nav__box}>
-          <nav className={s.nav}>
-            <Nav className={s.list} />
+          <nav className={`${s.nav} ${s.navigation} ${menuOpen ? s.open : ""}`}>
+            <Nav className={s.list} closeMenu={() => setMenuOpen(false)} />
           </nav>
 
-          <Button>ЗВ’ЯЗАТИСЬ</Button>
+          <Button className={s.button__contact}>ЗВ’ЯЗАТИСЬ</Button>
 
           <div className={s.locale__wrapper} ref={localeRef}>
             <SvgIcon
@@ -49,6 +51,12 @@ const Header = () => {
             />
             {showLocale && <LocaleSwitcher />}
           </div>
+          <button
+            className={s.burger__menu}
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            <span className={`${s.burger} ${menuOpen ? s.open : ""}`} />
+          </button>
         </div>
       </div>
     </header>

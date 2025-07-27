@@ -4,40 +4,18 @@ import Link from "next/link";
 import SvgIcon from "../SvgIcon/SvgIcon";
 import SocialNetworks from "../SocialNetworks/SocialNetworks";
 import Button from "../Button/Button";
-// import { useEffect, useState } from "react";
+
 import PortfolioButton from "../Button/PortfolioButton/PortfolioButton";
 import s from "./hero.module.scss";
 
 const Hero = () => {
-  // const [dynamicHeight, setDynamicHeight] = useState<number>(300);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     const w = Math.min(window.innerWidth, 1280);
-
-  //     const w1 = 768,
-  //       h1 = 400;
-  //     const w2 = 1280,
-  //       h2 = 600;
-
-  //     const calculatedHeight = h1 + ((w - w1) * (h2 - h1)) / (w2 - w1);
-  //     setDynamicHeight(calculatedHeight);
-  //   };
-
-  //   handleResize();
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
+ 
 
   return (
     <div className={`${s.container}  ${s.container__hero}`}>
       <section
         className={s.section__hero}
-        // style={{ height: `${dynamicHeight}px` }}
+    
       >
         <div className={s.section__hero__title}>
           <h1 className={s.title}>
