@@ -4,6 +4,10 @@
 
 .list__item {
   padding: 2px;
-  @include fontSize(16px, 500, 27px);
+  @include fontSize(14px, 500, 27px);
   text-transform: uppercase;
+  @include mediaQuery($screen-size-m) {
+    @include fontSize(16px, 500, 27px);
+  }
+  @include hover(color, 0.3s, $title-color);
 }
