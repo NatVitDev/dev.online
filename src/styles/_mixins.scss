@@ -57,7 +57,9 @@
 @mixin fontSize($fs: 14px, $fw: 400px, $lh: 14px) {
   font-size: $fs;
   font-weight: $fw;
-  line-height: calc(#{$lh} / #{$fs});
+  $lh-num: if(unit($lh) == "px", $lh / 1px, $lh);
+  $fs-num: if(unit($fs) == "px", $fs / 1px, $fs);
+  line-height: $lh-num / $fs-num;
 }
 
 @mixin hover($property, $transition-time, $value) {

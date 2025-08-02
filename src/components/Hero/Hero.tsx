@@ -7,16 +7,14 @@ import Button from "../Button/Button";
 
 import PortfolioButton from "../Button/PortfolioButton/PortfolioButton";
 import s from "./hero.module.scss";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
- 
+  const t = useTranslations("Hero");
 
   return (
     <div className={`${s.container}  ${s.container__hero}`}>
-      <section
-        className={s.section__hero}
-    
-      >
+      <section className={s.section__hero}>
         <div className={s.section__hero__title}>
           <h1 className={s.title}>
             {["W", "E", "B", " ", "S", "T", "U", "D", "I"].map(
@@ -33,11 +31,11 @@ const Hero = () => {
         </div>
 
         <div className={s.container__text}>
-          <p className={s.text}>Свіже рішення для вашого бізнесу</p>
+          <p className={s.text}>{t("slogan")}</p>
 
           <div className={s.box__button}>
-            <Button className={s.button__hero}>ЗАМОВИТИ САЙТ</Button>
-            <PortfolioButton label="До портфоліо">
+            <Button className={s.button__hero}>{t("orderButton")}</Button>
+            <PortfolioButton label={`${t("portfolioButton")}`}>
               <SvgIcon
                 id="arrow-right"
                 width={24}
