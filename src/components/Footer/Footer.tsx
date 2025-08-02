@@ -5,8 +5,11 @@ import Logo from "../Header/Logo";
 import Nav from "../Nav/Nav";
 import Button from "../Button/Button";
 import SocialNetworks from "../SocialNetworks/SocialNetworks";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("Navigation");
+
   return (
     <footer>
       <div className={`${s.container}  ${s.container__footer}`}>
@@ -29,7 +32,7 @@ const Footer = () => {
         </div>
         <Nav className={s.list__column} />
 
-        <Button>ЗВ’ЯЗАТИСЬ</Button>
+        <Button className={s.button__contact}>{t("contactButton")}</Button>
       </div>
     </footer>
   );

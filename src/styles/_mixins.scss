@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "./variables" as *;
 
 @mixin mediaQuery($breakpoint) {
@@ -57,9 +58,10 @@
 @mixin fontSize($fs: 14px, $fw: 400px, $lh: 14px) {
   font-size: $fs;
   font-weight: $fw;
-  $lh-num: if(unit($lh) == "px", $lh / 1px, $lh);
-  $fs-num: if(unit($fs) == "px", $fs / 1px, $fs);
-  line-height: $lh-num / $fs-num;
+  $lh-num: if(math.unit($lh) == "px", math.div($lh, 1px), $lh);
+  $fs-num: if(math.unit($fs) == "px", math.div($fs, 1px), $fs);
+
+  line-height: math.div($lh-num, $fs-num);
 }
 
 @mixin hover($property, $transition-time, $value) {
