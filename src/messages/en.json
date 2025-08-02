@@ -4,16 +4,43 @@
     "Portfolio": "Portfolio",
     "Prices": "Prices",
     "FAQ": "FAQ",
-    "Contact": "Contact"
+    "Contact": "Contact",
+    "contactButton": "CONTACT US"
   },
   "Hero": {
     "title": "",
-    "subtitle": ""
+    "subtitle": "",
+    "slogan": "A fresh solution for your business",
+    "portfolioButton": "View portfolio",
+    "orderButton": "ORDER A WEBSITE"
   },
   "About": {
     "title": "About Us",
-    "description": "",
-    "contactLink": "Contact Us"
+    "description": "Unlock your website’s potential with our professional web design and development services.",
+    "contactLink": "Contact Us",
+    "whyChooseUs": "Why Choose Us?",
+    "list": [
+      {
+        "title": "Business-Oriented Solutions",
+        "text": "We don’t just build websites — we help businesses grow, attract clients, and generate profit.",
+        "iconId": "diagram"
+      },
+      {
+        "title": "Minimalism that Works",
+        "text": "No clutter — only clean design, logic, and usability that drives action.",
+        "iconId": "leaf"
+      },
+      {
+        "title": "Personalized Approach",
+        "text": "Every project is a collaboration. We listen, think, and create together.",
+        "iconId": "puzzle"
+      },
+      {
+        "title": "Fast and Reliable",
+        "text": "Deadlines, transparency, and results matter to us as much as they matter to you.",
+        "iconId": "rocket"
+      }
+    ]
   },
   "Collection": {
     "collectionsTitle": "Collections"

@@ -3,5 +3,91 @@
 @use "@/styles/container" as *;
 
 .section {
-  padding-top: 100px;
+  padding-top: 150px;
+  padding-bottom: 24px;
+}
+
+.title {
+  @include fontSize(26px, 400, 33.8px);
+  color: $title-color;
+  margin-bottom: 4px;
+  @include mediaQuery($screen-size-m) {
+    @include fontSize(52px, 400, 65px);
+  }
+  @include mediaQuery($screen-size-l) {
+    @include fontSize(52px, 400, 67.6px);
+  }
+}
+.text {
+  margin-bottom: 16px;
+  max-width: 344px;
+  @include fontSize(16px, 400, 22.4px);
+  @include mediaQuery($screen-size-m) {
+    @include fontSize(18px, 400, 25.2px);
+  }
+  @include mediaQuery($screen-size-l) {
+    @include fontSize(22px, 400, 30.8px);
+    max-width: 384px;
+  }
+}
+
+.list {
+  @include flexCenter();
+  flex-direction: column;
+  gap: 12px;
+  @include mediaQuery($screen-size-m) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: normal;
+    max-width: 792px;
+    margin: 0 auto;
+  }
+  @include mediaQuery($screen-size-l) {
+    gap: 24px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.list__item {
+  @include flexCenter();
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 12px 36px 12px;
+  border-bottom: 1px solid $border;
+  max-width: 344px;
+  @include mediaQuery($screen-size-m) {
+    padding: 16px 16px 40px 16px;
+    gap: 8px;
+  }
+  @include mediaQuery($screen-size-l) {
+    gap: 12px;
+    padding: 16px;
+    max-width: 384px;
+  }
+}
+
+.list__item__icon {
+  @include mediaQuery($screen-size-l) {
+    width: 56px;
+    height: 56px;
+  }
+}
+.list__item__title {
+  @include fontSize(16px, 500, 22.4px);
+  color: $text-color;
+  @include mediaQuery($screen-size-m) {
+    @include fontSize(18px, 400, 25.2px);
+  }
+  @include mediaQuery($screen-size-l) {
+    @include fontSize(22px, 400, 30.8px);
+  }
+}
+.list__item__text {
+  @include fontSize(14px, 400, 23.8px);
+  color: $text-color;
+  @include mediaQuery($screen-size-m) {
+    @include fontSize(16px, 400, 27.2px);
+  }
 }

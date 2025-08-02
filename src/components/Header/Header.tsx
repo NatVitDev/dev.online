@@ -1,23 +1,25 @@
 "use client";
 
+import { useState, useRef, useEffect } from "react";
+
+import { useToggleMenu } from "@/hooks/useToggleLocale";
+import { useTranslations } from "next-intl";
 import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import Nav from "../Nav/Nav";
 import Logo from "./Logo";
-import { useState, useRef, useEffect } from "react";
-
 import SvgIcon from "../SvgIcon/SvgIcon";
 import Button from "../Button/Button";
 import s from "./Header.module.scss";
-import { useToggleMenu } from "@/hooks/useToggleLocale";
 
 const Header = () => {
   const [showLocale, setShowLocale] = useState(false);
   const localeRef = useRef<HTMLDivElement>(null);
   const { menuOpen, setMenuOpen } = useToggleMenu();
 
+  const t = useTranslations("Navigation");
+
   const toggleLocale = () => setShowLocale((prev) => !prev);
 
-  // Закриття при кліку поза меню
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (localeRef.current && !localeRef.current.contains(e.target as Node)) {
@@ -39,7 +41,7 @@ const Header = () => {
             <Nav className={s.list} closeMenu={() => setMenuOpen(false)} />
           </nav>
 
-          <Button className={s.button__contact}>ЗВ’ЯЗАТИСЬ</Button>
+          <Button className={s.button__contact}>{t("contactButton")}</Button>
 
           <div className={s.locale__wrapper} ref={localeRef}>
             <SvgIcon
